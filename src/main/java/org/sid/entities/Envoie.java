@@ -15,7 +15,7 @@ import java.util.Date;
 @NoArgsConstructor
 public class Envoie implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @CreatedDate
     private Date dateEnvoi;

@@ -13,7 +13,7 @@ import java.util.Collection;
 @NoArgsConstructor
 public class Emetteur implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nomEme;
     private String prenomEme;

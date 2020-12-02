@@ -23,4 +23,15 @@ public class EnvoieController {
     public Envoie save(@RequestBody Envoie envoie){
         return envoieRepository.save(envoie);
     }
+
+    @DeleteMapping("/envoie/{id}")
+    public Boolean deleteEnvoie(@PathVariable Long id){
+        envoieRepository.deleteById(id);
+        return true;
+    }
+
+    @PutMapping("/envoie/{id}")
+    public Envoie updateteEnvoie(@PathVariable Long id, Envoie envoie){
+        return envoieRepository.save(envoie);
+    }
 }
